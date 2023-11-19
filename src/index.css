@@ -1,13 +1,72 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Inter";
+}
+#root {
+  min-height: 100vh;
+}
+body {
+  padding: 0;
+  min-height: 100vh;
+  background: #041819;
+  color: #fff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.apexcharts-tooltip {
+  border: none !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  opacity: 0.7;
+  transform: translateY(-3px);
+}
+.mainWrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 90%;
+}
+.line {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+  height: 0.5px;
+  width: 100%;
+}
+.line2 {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+  height: 1.5px;
+  width: 100%;
 }

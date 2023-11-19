@@ -1,0 +1,106 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 90px 0;
+}
+.card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 18.961px;
+  border: 1.185px solid rgba(255, 255, 255, 0.02);
+  position: relative;
+}
+.infoContainer {
+  position: absolute;
+
+  width: 100%;
+}
+.bg {
+  width: 100%;
+  object-fit: cover;
+  object-fit: cover;
+  z-index: -1;
+}
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 7%;
+  padding-bottom: 5px;
+}
+
+.nameAndIcon {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.name {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16.591px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.857%;
+  text-transform: uppercase;
+}
+.coinName {
+  color: #ebebeb;
+  font-family: Inter;
+  font-size: 14.221px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.amount {
+  color: #fff;
+  font-family: Inter;
+  font-size: 23.701px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  padding-left: 30px;
+  padding: 0 calc(7% + 3px);
+}
+@media only screen and (max-width: 1440px) {
+  .container {
+    gap: 7px 12px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 991px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 50px 0;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .amount {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

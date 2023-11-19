@@ -1,0 +1,119 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 45px 0;
+
+  gap: 60px;
+}
+.title {
+  color: #fff;
+  font-family: Inter;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 113.043%;
+}
+.services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  border-radius: 12px;
+  padding: 20px 15px 25px 15px;
+
+  background: #0f3037;
+}
+
+.icon {
+  width: 66px;
+  height: 66px;
+}
+.heading {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.info {
+  color: rgb(247, 247, 247, 0.8);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 157.143%;
+}
+
+.learnmore {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 137.5%;
+  margin-top: auto;
+  padding-top: 15px;
+  transition: 0.3s;
+}
+.learnmore:hover {
+  opacity: 0.7;
+  transform: translateY(-3px);
+}
+.arrow {
+  margin-right: 5px;
+  margin-top: 3px;
+  font-size: 22px;
+}
+@media only screen and (max-width: 1440px) {
+  .services {
+    gap: 15px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .services {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 991px) {
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 575px) {
+  .services {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .wrapper {
+    padding: 25px 0;
+    padding-bottom: 0;
+    gap: 35px;
+  }
+  .infoContainer {
+    gap: 20px;
+  }
+  .title {
+    font-size: 36px;
+  }
+  .text {
+    font-size: 15px;
+  }
+  .button {
+    font-size: 14px;
+  }
+  .button::after {
+    top: -40%;
+    transform: translateX(calc(100% + 20px));
+  }
+}

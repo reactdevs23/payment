@@ -1,0 +1,91 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+
+  padding: 120px 0;
+}
+.image {
+  width: 100%;
+}
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+.title {
+  color: #fff;
+  font-family: Inter;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 113.043%;
+}
+
+.text {
+  color: #fff;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 166.667%;
+}
+.button {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%;
+  padding: 12px 24px;
+  min-width: 120px;
+  border-radius: 6px;
+  background: #00bd43;
+  color: #080820;
+  border: 1px solid #00bd43;
+  position: relative;
+}
+.button::after {
+  content: url(../../images/arrow.png);
+  position: absolute;
+  right: 0;
+  top: -30%;
+  transform: translateX(calc(100% + 40px));
+  width: 110px;
+}
+@media only screen and (max-width: 991px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 0;
+  }
+  .image {
+    max-width: 500px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .wrapper {
+    padding: 50px 0;
+  }
+  .infoContainer {
+    gap: 20px;
+  }
+  .title {
+    font-size: 36px;
+  }
+  .text {
+    font-size: 15px;
+  }
+  .button {
+    font-size: 14px;
+  }
+  .button::after {
+    top: -40%;
+    transform: translateX(calc(100% + 20px));
+  }
+}

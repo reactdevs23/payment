@@ -1,0 +1,162 @@
+.footer {
+  padding: 70px 0;
+  padding-bottom: 30px;
+  margin-top: auto;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 365px repeat(2, 1fr) auto;
+  gap: 18px;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.logoAndInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.logoTextContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+}
+.logo {
+  width: 130px;
+}
+.info {
+  color: #fff;
+
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 162.5%;
+  max-width: 310px;
+  width: 100%;
+}
+.socialContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.iconContainer {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+}
+.socialIcon {
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.itemContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.heading {
+  color: var(--White, #fff);
+
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 133.333%;
+  padding-bottom: 6px;
+}
+.item {
+  color: #fff;
+
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 162.5%;
+  transition: 0.3s;
+}
+.item:hover {
+  transform: translateY(-2px);
+}
+.contactLink {
+  display: flex;
+  gap: 8px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+.light {
+  font-weight: 300;
+}
+.contactIcon {
+  font-size: 20px;
+}
+
+.copyRightContainer {
+  background: #061e1f;
+  padding-top: 50px;
+}
+.copyRight {
+  color: #fff;
+
+  /* Body/Body Text Regular */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 162.5%;
+
+  text-align: center;
+}
+@media only screen and (max-width: 1199px) {
+  .wrapper {
+    grid-template-columns: auto repeat(2, 1fr) auto;
+    gap: 50px 35px;
+  }
+  .heading {
+    font-size: 20px;
+  }
+  .info {
+    max-width: 261px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr auto;
+  }
+  .logoAndInfo {
+    grid-column: 1/-1;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contactUs {
+    grid-column: 1/-1;
+  }
+  .item {
+    font-size: 15px;
+  }
+}
