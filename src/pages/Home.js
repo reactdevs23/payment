@@ -18,7 +18,7 @@ const Home = () => {
       {" "}
       <HeroSection />
       <Partners />
-      <Currencies />
+      {/* <Currencies /> */}
       <div className="line"></div>
       <AboutUs />
       <ServicesSection />
